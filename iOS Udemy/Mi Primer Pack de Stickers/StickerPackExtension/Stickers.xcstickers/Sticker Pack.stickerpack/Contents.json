@@ -1,0 +1,53 @@
+{
+  "stickers" : [
+    {
+      "filename" : "ARTIST PALETTE.sticker"
+    },
+    {
+      "filename" : "CAMERA.sticker"
+    },
+    {
+      "filename" : "CLAPPER BOARD.sticker"
+    },
+    {
+      "filename" : "HEADPHONE.sticker"
+    },
+    {
+      "filename" : "MICROPHONE.sticker"
+    },
+    {
+      "filename" : "MOVIE CAMERA.sticker"
+    },
+    {
+      "filename" : "MULTIPLE MUSICAL NOTES.sticker"
+    },
+    {
+      "filename" : "MUSIC GUITAR.sticker"
+    },
+    {
+      "filename" : "MUSIC SAXOPHONE.sticker"
+    },
+    {
+      "filename" : "MUSIC TRUMPET.sticker"
+    },
+    {
+      "filename" : "MUSIC VIOLIN.sticker"
+    },
+    {
+      "filename" : "PERFORMING ARTS.sticker"
+    },
+    {
+      "filename" : "VIDEO CAMERA.sticker"
+    },
+    {
+      "filename" : "VIDEOCASSETTE.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}

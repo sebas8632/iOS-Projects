@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_the_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_sm" translatesAutoresizingMaskIntoConstraints="NO" id="bF0-2c-InT">
+                                <rect key="frame" x="32" y="20" width="256" height="196"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slU-B7-g6x" userLabel="TextContainer">
+                                <rect key="frame" x="-4" y="236" width="328" height="332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-R2-tJb">
+                                        <rect key="frame" x="92.5" y="126" width="143" height="82"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palma de Mallorca España " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8L1-Bc-9Mj">
+                                        <rect key="frame" x="16.5" y="24" width="295.5" height="82"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65129676390000002" green="0.21960869799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8L1-Bc-9Mj" firstAttribute="width" relation="lessThanOrEqual" secondItem="slU-B7-g6x" secondAttribute="width" multiplier="0.9" id="Q3o-4Z-pOy"/>
+                                    <constraint firstItem="8L1-Bc-9Mj" firstAttribute="top" secondItem="slU-B7-g6x" secondAttribute="topMargin" constant="16" id="U6d-rD-JI5"/>
+                                    <constraint firstItem="Z8M-R2-tJb" firstAttribute="top" secondItem="8L1-Bc-9Mj" secondAttribute="bottom" constant="20" id="qLj-M4-7wz"/>
+                                    <constraint firstItem="Z8M-R2-tJb" firstAttribute="centerX" secondItem="slU-B7-g6x" secondAttribute="centerX" id="vx1-1C-6CC"/>
+                                    <constraint firstItem="8L1-Bc-9Mj" firstAttribute="centerX" secondItem="slU-B7-g6x" secondAttribute="centerX" id="wbI-gI-X3A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54086479610000004" green="0.62337294560000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="slU-B7-g6x" firstAttribute="top" secondItem="bF0-2c-InT" secondAttribute="bottom" constant="20" id="7ca-dq-Vwo"/>
+                            <constraint firstItem="slU-B7-g6x" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="B28-1g-pA4"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="CUm-QL-zyW"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cfe-Zo-ixW"/>
+                            <constraint firstItem="slU-B7-g6x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DMv-K3-7Px"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="slU-B7-g6x" secondAttribute="bottom" id="PIU-qc-8np"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="WMj-1h-HaV"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XuR-dp-a1S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="slU-B7-g6x" secondAttribute="trailing" constant="-20" id="jUg-Sc-SMv"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jh1-QG-A3S"/>
+                            <constraint firstItem="slU-B7-g6x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qCa-qm-PYe"/>
+                            <constraint firstItem="bF0-2c-InT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="yZY-Cm-663"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CUm-QL-zyW"/>
+                                <exclude reference="jh1-QG-A3S"/>
+                                <exclude reference="B28-1g-pA4"/>
+                                <exclude reference="DMv-K3-7Px"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CUm-QL-zyW"/>
+                                <exclude reference="Cfe-Zo-ixW"/>
+                                <exclude reference="WMj-1h-HaV"/>
+                                <exclude reference="XuR-dp-a1S"/>
+                                <include reference="jh1-QG-A3S"/>
+                                <exclude reference="7ca-dq-Vwo"/>
+                                <include reference="B28-1g-pA4"/>
+                                <include reference="DMv-K3-7Px"/>
+                                <exclude reference="qCa-qm-PYe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.7376311844078" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud_sm" width="300" height="196"/>
+    </resources>
+</document>

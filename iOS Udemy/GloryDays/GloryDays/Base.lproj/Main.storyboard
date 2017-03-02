@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="12z-6Z-u7x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Glory Days-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GloryDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bRt-f9-mWp">
+                                <rect key="frame" x="15" y="234.5" width="345" height="199"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTm-fH-bxj">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="163"/>
+                                        <string key="text">Para poder utilizar la app,, Glory Days necesita permisos para leer tu biblioteca de fotos, grabar tu voz y transcribirla a texto. Haciendo clic en el botón siguiente, te pediremos estos permisos pero si cambias de opinión puedes cambiar la configuración en el menú de ajustes.</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbU-k1-fJm">
+                                        <rect key="frame" x="131.5" y="163" width="82" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Continuar">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="askForPermissions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsh-3H-jmQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bRt-f9-mWp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ST-hQ-SpY"/>
+                            <constraint firstItem="bRt-f9-mWp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nfc-cq-ImP"/>
+                            <constraint firstItem="bRt-f9-mWp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-30" id="vdf-0U-myO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Glory Days" id="jXh-pM-oSZ"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="iTm-fH-bxj" id="DXG-Ut-cEJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="129.98500749625188"/>
+        </scene>
+        <!--Memories Collection View Controller-->
+        <scene sceneID="Hye-RT-4P3">
+            <objects>
+                <collectionViewController id="5oZ-87-X35" customClass="MemoriesCollectionViewController" customModule="GloryDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gbr-ZO-SdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.38039215686274508" green="0.33725490196078434" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="rtP-6a-3cY">
+                            <size key="itemSize" width="250" height="250"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="me7-JO-mem" customClass="MemoryCell" customModule="GloryDays" customModuleProvider="target">
+                                <rect key="frame" x="63" y="50" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4se-74-6FX">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4se-74-6FX" secondAttribute="bottom" id="8qK-5O-1JJ"/>
+                                    <constraint firstItem="4se-74-6FX" firstAttribute="leading" secondItem="me7-JO-mem" secondAttribute="leading" id="EmW-Y6-mNL"/>
+                                    <constraint firstItem="4se-74-6FX" firstAttribute="top" secondItem="me7-JO-mem" secondAttribute="top" id="t0G-MR-S9a"/>
+                                    <constraint firstAttribute="trailing" secondItem="4se-74-6FX" secondAttribute="trailing" id="uJm-pJ-zqn"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="4se-74-6FX" id="zRG-4e-m0V"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="5aG-3F-7yl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Buscar imagen" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-Ih-n5S">
+                                    <rect key="frame" x="0.0" y="-2" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="searchField.textColor">
+                                            <color key="value" red="0.94961532360406087" green="0.94961532360406087" blue="0.94961532360406087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="5oZ-87-X35" id="RoS-RU-sh5"/>
+                                    </connections>
+                                </searchBar>
+                            </subviews>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="5oZ-87-X35" id="PQ4-PZ-jWh"/>
+                            <outlet property="delegate" destination="5oZ-87-X35" id="VpL-i6-Mwx"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="8sL-qc-UX4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qT-w0-pn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.5999999999999" y="188.45577211394306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WMH-fs-CIT">
+            <objects>
+                <navigationController storyboardIdentifier="ShowTerms" automaticallyAdjustsScrollViewInsets="NO" id="Jiq-D4-Nx8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pr8-ri-L58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vRB-n5-htY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6a-bi-7El" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="783.95802098950526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ucr-QH-Yud">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12z-6Z-u7x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wLk-y9-sD9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5oZ-87-X35" kind="relationship" relationship="rootViewController" id="ShT-Dl-IPW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ8-Th-IVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+</document>

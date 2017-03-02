@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxX-hJ-sYV">
+                                <rect key="frame" x="56" y="40" width="263" height="191.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5X-7c-BfB">
+                                <rect key="frame" x="136" y="323.5" width="103" height="81.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-nK-PB2">
+                                        <rect key="frame" x="28" y="0.0" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-P6-4KY">
+                                        <rect key="frame" x="40" y="30.5" width="23" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVx-g3-h64">
+                                        <rect key="frame" x="34.5" y="61" width="34" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-yo-pRh">
+                                <rect key="frame" x="144" y="541" width="86" height="30"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlG-vY-pI4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cxX-hJ-sYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="1Aw-dS-fQK"/>
+                            <constraint firstItem="Ld5-yo-pRh" firstAttribute="top" secondItem="B5X-7c-BfB" secondAttribute="bottom" constant="136" id="38Z-1x-tpS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B5X-7c-BfB" secondAttribute="trailing" constant="120" id="5NC-0x-vTa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ld5-yo-pRh" secondAttribute="bottom" constant="96" id="6BL-2l-6Fl"/>
+                            <constraint firstItem="B5X-7c-BfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JyT-dG-c8w"/>
+                            <constraint firstItem="Ld5-yo-pRh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="Tjr-qb-LtT"/>
+                            <constraint firstItem="cxX-hJ-sYV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="dqI-5K-V1Q"/>
+                            <constraint firstItem="cxX-hJ-sYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgl-J4-S1Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cxX-hJ-sYV" secondAttribute="trailing" constant="40" id="oTu-l0-oz4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ld5-yo-pRh" secondAttribute="trailing" constant="129" id="og0-Ba-KEh"/>
+                            <constraint firstItem="B5X-7c-BfB" firstAttribute="top" secondItem="cxX-hJ-sYV" secondAttribute="bottom" constant="92" id="q9M-yx-tyE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B5X-7c-BfB" secondAttribute="bottom" constant="262" id="qtY-lX-CiQ"/>
+                            <constraint firstItem="B5X-7c-BfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="slq-65-TeA"/>
+                            <constraint firstItem="Ld5-yo-pRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vaO-Lx-NWP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cvLabel" destination="cCd-P6-4KY" id="1y1-HZ-f8b"/>
+                        <outlet property="imageView" destination="cxX-hJ-sYV" id="Hv0-ap-7iI"/>
+                        <outlet property="kmsLabel" destination="RVx-g3-h64" id="cFc-W9-uNf"/>
+                        <outlet property="marcaLabel" destination="hqq-nK-PB2" id="DNn-SM-isk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="100.29985007496252"/>
+        </scene>
+    </scenes>
+</document>
